@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+div#nav {
+    position: fixed;
+    height: 75px;
+    background-color: #fffffff5;
+    width: 100%;
+    z-index: 1;
+}
+div#splash {
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+}
+video#video {
+    height: calc(100% - 75px);
+    margin-top: 75px;
+    pointer-events: none;
+    opacity: 0.7;
+    /* Midstiller */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+div#info {
+    height: 550px;
+    background-color: rgba(23,23,23,1);
+}
+div#universe {
+    position: relative;
+    height: 100%;
+    width: auto;
+     
+}
+h1#description {
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lobster', cursive;
+    padding-top: 30px;
+    transition-duration: 0.1s;
+    width: 300px;
+}
+h1#description:hover {
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 0px #000000,  
+    5px 5px 0px #b61e1e,
+    6px 6px 0px #3b0d0d;
+}
+h1#description + h1 {
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition-duration: 0.1s;
+    bottom: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+h1#description:hover + h1 {
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 0px #000000,  
+    5px 5px 0px #b61e1e,
+    6px 6px 0px #3b0d0d;
+    opacity: 1;
+}
+div#image {
+    position: relative;
+    height: 83.3%;
+    width: auto;
+}
+button#edenism {
+    cursor: pointer;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px 43px;
+    overflow: hidden;
+}
+button#edenism p {
+    padding: 10px;
+    margin: 0px;
+}
+button#edenism p:hover {
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+    color: black;
+}
+button#edenism p:hover + div {
+    transition: opacity 1.1s;
+    opacity: 1;
+}
+button#edenism div {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+img#yyxy {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    transition-duration: 0.3s;
+    filter: blur(3px);
+    opacity: 50%;
+}
+img#yyxy:hover {
+    filter: blur(0);
+    opacity: 100%;
+    height: 62%;
+}
+button#middle {
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px 43px;
+    overflow: hidden;
+}
+button#middle p {
+    padding: 10px;
+    margin: 0px;
+}
+button#middle p:hover {
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+    color: black;
+}
+button#middle p:hover + div {
+    transition: opacity 1.1s;
+    opacity: 1;
+}
+button#middle div {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+img#oddeyecircle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    transition-duration: 0.3s;
+    filter: blur(3px);
+    opacity: 50%;
+}
+img#oddeyecircle:hover {
+    filter: blur(0);
+    opacity: 100%;
+    height: 62%;
+}
+button#earth {
+    cursor: pointer;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px 43px;
+    overflow: hidden;
+}
+button#earth p {
+    padding: 10px;
+    margin: 0px;
+}
+button#earth p:hover {
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+    color: black;
+}
+button#earth p:hover + div {
+    transition: opacity 1.1s;
+    opacity: 1;
+}
+button#earth div {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+img#onethird {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    transition-duration: 0.3s;
+    filter: blur(3px);
+    opacity: 50%;
+}
+img#onethird:hover {
+    filter: blur(0);
+    opacity: 100%;
+    height: 62%;
+}
+div#parallax {
+    background-image: url("Loonaproject/standoff.gif") ;
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#featured {
+    height: 1000px;
+    background: linear-gradient(0deg, rgb(129, 129, 129) 0%, rgb(51, 51, 51) 7%, rgba(23,23,23,1) 75%);
+}
+div#footer {
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+}
+h1#title {
+    margin-left: 180px;
+    font-family: 'Cinzel', serif;
+    transition: margin-left 0.5s, opacity 0.1s;
+}
+h1#title:hover {
+    margin-left: 200px;
+    opacity: 0;
+}
+h1#title + h1 {
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    transition: left 0.5s, opacity 0.1s;
+    top: 0;
+    left: 180px;
+    opacity: 0;
+}
+h1#title:hover + h1 {
+    left: 200px;
+    opacity: 1;
+}
+a#home {
+    position: absolute;
+    right: 300px;
+    top: 25px;
+    color: black;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    padding: 5px 10px;
+}
+a#home:hover {
+    color: black;
+    font-size: 105%;
+    letter-spacing: 4px;
+    transform: rotate(-5deg);
+    box-shadow: inset 0 0 0 25px #000000da;
+    color: white;   
+}
+a#gallery {
+    position: absolute;
+    right: 180px;
+    top: 25px;
+    color: black;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    padding:5px 10px
+}
+a#gallery:hover {
+    color: black;
+    font-size: 105%;
+    letter-spacing: 4px;
+    transform: rotate(-5deg);
+    box-shadow: inset 0 0 0 25px #000000da;
+    color: white;
+}
+/* Buttons */
+button {
+    box-sizing: border-box;
+    color:white;
+    background-color: transparent;
+    text-align:center;
+    transition: background-color 0.5s;
+    border: 2px solid white;
+    font-family: 'Lora', serif;
+    position: absolute;
+}
+button:hover{
+    background-color:rgba(255, 255, 255, 0.267);
+}
+button#infobox {
+    left: 50%;
+    top: 75%;
+    height: 40px;
+    width: 75px;
+    transform: translate(-50%, -50%);
+    padding: 8px 30px;
+    cursor: pointer;
+}
+button#infobox p {
+    transition: font-size 0.8s, transform 0.7s;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+button#infobox:hover p{
+    transform: translate(-50%, -50%) rotate(720deg);
+    font-size: 240%;
+}
